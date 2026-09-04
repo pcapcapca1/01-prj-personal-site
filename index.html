@@ -2,10 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal portfolio website for a web development student.">
+  <title>Your Name | Web Development Student</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header contains the site title and the main navigation. -->
+  <header class="site-header">
+    <a class="logo" href="#about">YN<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- This introduction is the first thing visitors see. -->
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <p class="eyebrow">Web development student</p>
+        <h1>Building ideas<br><em>for the web.</em></h1>
+        <p class="intro">Hi, I’m Your Name. I’m learning how to turn curious ideas into useful, thoughtful websites.</p>
+        <a class="button" href="#projects">See my projects <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="portrait-wrap">
+        <img src="img/me.png" alt="Portrait of Your Name">
+        <p class="portrait-note">Currently learning<br><strong>HTML + CSS</strong></p>
+      </div>
+    </section>
+
+    <section class="content-section" id="stack">
+      <div class="section-heading">
+        <p class="eyebrow">The toolkit</p>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="stack-list">
+        <div class="stack-item"><span>01</span><strong>HTML</strong><p>Page structure</p></div>
+        <div class="stack-item"><span>02</span><strong>CSS</strong><p>Visual design</p></div>
+        <div class="stack-item"><span>03</span><strong>Git</strong><p>Version control</p></div>
+        <div class="stack-item"><span>04</span><strong>JavaScript</strong><p>Coming soon</p></div>
+      </div>
+    </section>
+
+    <section class="content-section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-card project-featured">
+          <p class="project-number">01 / In progress</p>
+          <h3>Personal Website</h3>
+          <p>A simple, welcoming home for my learning journey and future projects.</p>
+          <a href="#about">View project <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card">
+          <p class="project-number">02 / Coming soon</p>
+          <h3>Project Two</h3>
+          <p>I’ll add a new course project here as I build it.</p>
+          <a href="#projects">View project <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">What I bring</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-content">
+        <p class="skills-intro">I’m growing my skills one project at a time, with a focus on making websites that are clear, accessible, and easy to use.</p>
+        <ul class="skill-list">
+          <li>Responsive layouts</li>
+          <li>Semantic HTML</li>
+          <li>Accessible design</li>
+          <li>Creative problem solving</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Update the name and links below as your portfolio grows. -->
+  <footer class="site-footer">
+    <p>Let’s make something useful.</p>
+    <a href="mailto:hello@example.com">hello@example.com</a>
+    <p class="copyright">© 2025 Your Name</p>
+  </footer>
 </body>
 </html>

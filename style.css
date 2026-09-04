@@ -66,7 +66,8 @@ h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
 .skills-content { align-items: flex-start; justify-content: space-between; }
 .skills-intro { max-width: 360px; margin-top: 0; color: var(--muted); }
 .skill-list { width: 48%; margin: 0; padding: 0; list-style: none; }
-.skill-list li { padding: 12px 0; border-bottom: 1px solid var(--line); font-family: Georgia, serif; font-size: 1.1rem; }
+.skill-list li { margin-bottom: 16px; padding: 16px 18px; border: 1px solid var(--line); border-left: 3px solid var(--coral); background: var(--paper); font-family: Georgia, serif; font-size: 1.1rem; }
+.skill-list li:last-child { margin-bottom: 0; }
 .site-footer { padding: 60px 32px; color: white; background: var(--ink); text-align: center; }
 .site-footer p:first-child { margin: 0 0 8px; font-family: Georgia, serif; font-size: 1.7rem; }
 .site-footer a { color: #f5b29d; font-size: 0.9rem; }

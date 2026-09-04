@@ -49,8 +49,8 @@ h1 em { color: var(--coral); font-weight: normal; }
 .section-heading { display: inline-block; width: 31%; vertical-align: top; }
 h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
 .stack-list, .project-list, .skills-content { display: inline-flex; width: 65%; vertical-align: top; }
-.stack-list { justify-content: space-between; }
-.stack-item { width: 23%; padding-top: 4px; border-top: 2px solid var(--ink); }
+.stack-list { flex-wrap: wrap; gap: 16px; }
+.stack-item { width: calc((100% - 32px) / 3); min-height: 150px; padding: 16px; border: 1px solid var(--line); border-top: 2px solid var(--ink); background: var(--paper); }
 .stack-item span { display: block; margin-bottom: 28px; color: var(--coral); font-size: 0.75rem; }
 .stack-item strong { display: block; font-family: Georgia, serif; font-size: 1.35rem; font-weight: normal; }
 .stack-item p { margin: 4px 0 0; color: var(--muted); font-size: 0.8rem; }
@@ -81,7 +81,7 @@ h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
 	.hero { display: block; min-height: auto; }
 	.portrait-wrap { width: 220px; margin: 70px auto 35px; }
 	.section-heading, .stack-list, .project-list, .skills-content { display: block; width: 100%; }
-	.stack-item { display: inline-block; width: 48%; margin-bottom: 30px; }
+	.stack-item { display: inline-block; width: 48%; margin-bottom: 0; }
 	.project-card { margin-bottom: 16px; }
 	.skills-intro, .skill-list { width: 100%; max-width: none; }
 }
